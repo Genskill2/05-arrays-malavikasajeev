@@ -2,7 +2,15 @@
 #include <assert.h>
 
 
-float average(int [], int);
+float average(int a[], int n)
+{
+int i,s=0;
+  for(i=0;i<n;i++)
+  s+=a[i];
+  float avg;
+  avg=(float)s/n;
+  return avg;
+}
 
 int main(void) {
   int x[] = {9,5,6,10,2,-3,4};
